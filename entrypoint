@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Starting slapd."
+exec /usr/local/libexec/slapd -F /usr/local/etc/slapd.d -h 'ldapi:// ldap://' -d stats
